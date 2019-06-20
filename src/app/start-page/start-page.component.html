@@ -5,7 +5,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="bg-text text-center col-xs-offset-4 col-xs-4">
+    <div class="bg-text text-center col-md-offset-4 col-md-4 col-xs-12">
       <!-- TIME AND DATE -->
       <h1>{{ time }}</h1>
       <p>{{ today }}</p>
@@ -27,7 +27,7 @@
       <hr>
       <!-- Links -->
       <div class="links col-xs-12">
-          <div class="col-xs-3" *ngFor="let link of links">
+          <div class="col-md-3 col-xs-6" *ngFor="let link of links">
               <a href="{{ link.link }}">{{ link.name }}</a>
             </div>
         </div>
