@@ -1,0 +1,41 @@
+.background{
+  position:fixed;
+  background-image: url('../../assets/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  filter: blur(5px);
+  padding: 10px;
+}
+.backdrop{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: 50;
+}
+.bg-text{
+  /* position: absolute; */
+  top: 30vh;
+  /* bottom: 25%; */
+  z-index: 100;
+  /* left: 45%; */
+}
+#google-search, #search-button {
+  background: rgba(255, 255, 255, 0.459);
+  color: white;
+}
+#google-search::placeholder{
+  color: white;
+}
+.links > div{
+  margin-bottom: 15px;
+}
+.links > div > a{
+  color: white;
+  text-decoration: none;
+}

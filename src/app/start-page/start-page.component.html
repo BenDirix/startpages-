@@ -1,0 +1,39 @@
+<div class="background">
+  <!-- <img src="../../assets/VD8ldiL.jpg" class="img-responsive" alt=""> -->
+</div>
+<div class="backdrop"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="bg-text text-center col-xs-offset-4 col-xs-4">
+      <!-- TIME AND DATE -->
+      <h1>{{ time }}</h1>
+      <p>{{ today }}</p>
+      <hr>
+      <!-- GOOGLE SEARCH FORM -->
+      <form method="GET" action="https://www.google.com/search"  >
+        <div class="form-group">
+            <div class="input-group">                
+              <input id="google-search" name="q" type="text" class="form-control" placeholder="Search the googles" value="" cursor="text" autofocus autocomplete="off">
+              <!-- The search button -->
+              <span class="input-group-btn">
+                <button id="search-button" type="submit" class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div>
+        </div>        
+      </form>
+      <hr>
+      <!-- Links -->
+      <div class="links col-xs-12">
+          <div class="col-xs-3" *ngFor="let link of links">
+              <a href="{{ link.link }}">{{ link.name }}</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  
+</div>
+
