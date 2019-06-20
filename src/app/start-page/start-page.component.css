@@ -8,6 +8,7 @@
   width: 100%;
   filter: blur(5px);
   padding: 10px;
+  z-index: 25;
 }
 .backdrop{
   position: fixed;
@@ -25,6 +26,7 @@
   z-index: 100;
   /* left: 45%; */
 }
+
 #google-search, #search-button {
   background: rgba(255, 255, 255, 0.459);
   color: white;

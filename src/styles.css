@@ -9,3 +9,14 @@ body{
   color: white;
 }
 
+.footer{
+  position: absolute;
+    bottom: 20px;
+  z-index: 100;
+}
+
+.footer > span > small > a{
+  text-decoration: underline;
+  color: white;
+}
+
