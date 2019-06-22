@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterContentInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-start-page',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./start-page.component.css']
 })
 export class StartPageComponent implements OnInit {
+  
+  @ViewChild('googleSearch', {static: true}) googleSearch: ElementRef;
   links = [
     {name: 'Twitter', link: 'https://www.twitter.com/'},    
     {name: 'Github', link: 'https://www.github.com/'},
@@ -26,9 +28,9 @@ export class StartPageComponent implements OnInit {
     setInterval(()=>{
       this.getTime();
       
-    },1000)
-    
-  }
+    },1000) 
+    this.googleSearch.nativeElement.focus();
+  }  
   private getDate(){
     let today = new Date();
     // let day = today.getDay();
